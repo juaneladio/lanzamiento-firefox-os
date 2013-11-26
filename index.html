@@ -1,0 +1,693 @@
+<!DOCTYPE HTML>
+<!-- <html lang="en-US"> -->
+<html lang="es-PE" class="fade">
+<!-- 
+  ^ la clase "fade" hace que las diapositivas pasen suavemente de una a otra
+ -->
+<!-- <html lang="en-US" class="nonumbers"> -->
+<!-- 
+  Si no quieres números en las diapositivas agrega la clase "nonumbers" al elemento HTML.
+-->
+<head>
+  <meta charset="UTF-8">
+  <title>Firefox OS: la historia de todos nosotros</title>
+<!-- 
+  Si subes la presentación a la web, asegurate de tener un buen título, este se mostrará en los resultados de las búsquedas y en las redes sociales
+ -->
+  <meta name="viewport" content="width=device-width, user-scalable=yes">
+  <link rel="stylesheet" href="themes/mozilla/styles/style.css">
+  <style type="text/css">
+    div[id$='bullets'].slide > div::after {
+      content: 'Solo para información, NO mostrar';
+      background: rgba(200,0,0,0.5);
+      color: #fff;
+      position: absolute;
+      top: 20px;
+      right: 0;
+      padding: 5px 20px;
+      transform: rotate(90deg) translate(52%,-150px);
+      border-radius: 5px;
+    }
+    .full div[id$='bullets'].slide > div::after {
+      animation: wiggle alternate 1s infinite;
+    }
+    @keyframes wiggle {
+      from {
+        transform: rotate(90deg) translate(52%,-150px);
+      }
+      to {
+        transform: rotate(90deg) translate(52%,-160px);
+      }
+    }
+    .slide.shout h2 {
+      font-size: 130px;
+    }
+    /*New styles*/
+    .demourl {
+      color: #FFFFFF;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body class="list">
+
+  <header class="caption">
+    <h1>Firefox OS: la historia de todos nosotros</h1>
+    <p class="footer">
+      Juan Eladio Sánchez Rosas, 
+      <a href="https://twitter.com/juaneladio">@juaneladio</a>
+    </p>
+  </header>
+  <aside class="talkdescription">
+    <p>Esta presentación usa el sistema shower, puedes pasar por encima de cada diapositiva para ver las notas y hacer clic en cualquiera de ellas para ir al modo de presentación. Después puedes usar las teclas para navegar <button onclick="goFullScreen()">Pantalla completa</button></p>
+    <p class="abstract">
+      <strong>Resumen: </strong>
+      El lanzamiento de Firefox OS en los primeros mercados de Europa y América Latina.
+    </p>
+  </aside>
+
+<!-- 
+    Copia simplemente cada bloque completo para cada diapositiva que quieras. Las diapositivas especiales tienen clases extra. Cada dispositiva necesita un ID que permite un marcador y saltar a esa diapositiva específicamente.
+-->
+
+  <div id="todos-nosotros" class="slide w cover"><div>
+    <section>
+      <header>
+        <h2>Firefox OS: <br>La historia de todos nosotros</h2>
+      </header>
+      <img src="pictures/lanzamiento/MHWorkWeek.jpg" 
+           alt="Mozilla Hispano Work Week - Lima 2013" 
+           class="middle" height="450">
+      <footer class="notes">
+        Esta charla es sobre el lanzamiento de Firefox OS en 2013, desde el punto de vista de un integrante de la comunidad Mozilla.
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="inicio-y-fin" class="slide w cover"><div>
+    <section>
+      <header>
+        <h2>¿Han oído hablar de Firefox OS?</h2>
+      </header>
+      <img src="pictures/lanzamiento/Semana.jpg" 
+           alt="Meetup Ica" 
+           class="middle" height="450">
+      <footer class="notes">
+        El 11 de octubre de 2011 vine por primera vez a Ica. Han sido dos años en donde he estado en tres semanas tecnológicas, y esto acabará hoy.
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="cafe" class="slide w cover"><div>
+    <section>
+      <header>
+        <h2>¿Hay algo nuevo que decirles?</h2>
+      </header>
+      <img src="pictures/lanzamiento/Starbuck.jpg" 
+           alt="Starbuck" 
+           class="middle shadow" height="450">
+      <footer class="notes">
+        No tenía una idea de qué hablar, pero alguien me recordó que las mejores charlas son las de una experiencia personal.
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="firefox-os" class="slide w cover"><div>
+    <section>
+      <header>
+        <h2>Firefox OS nace hace 2 años</h2>
+      </header>
+      <img src="pictures/lanzamiento/BootingTheWeb.png" 
+           alt="Booting the web at Mozilla Wiki" 
+           class="middle shadow" height="450">
+			<p class="demourl">
+				<a href="https://wiki.mozilla.org/Booting_to_the_Web">wiki.mozilla.org/Booting_to_the_Web</a>
+			</p>
+      <footer class="notes">
+        Firefox OS es un proyecto de Mozilla de hace un poco más de dos años.
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="no-solo-porque-podemos" class="slide h cover"><div>
+    <section>
+      <header>
+        <h2>Una alternativa en el mundo móvil</h2>
+      </header>
+      <img src="pictures/lanzamiento/StarTrek2009EnterpriseByDannydeman.jpg" 
+           alt="Meetup Ica" 
+           class="middle" height="450">
+			<p class="demourl" style="text-align:left;">
+				Puedes conformarte con una vida mediocre,
+        <br>¿o crees que estabas destinado para algo mejor? ¿algo especial?
+        <br>[Star Trek (2009)]
+			</p>
+      <footer class="notes">
+        Necesitamos crear una alternativa, no sólo porque sea posible tecnológicamente: Ubuntu for Phones / Tizen / Sailfish
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="traer-de-vuelta-a-la-web" class="slide h cover"><div>
+    <section>
+      <header>
+        <h2>Para traer de vuelta a la web</h2>
+      </header>
+      <img src="pictures/lanzamiento/Grand_army_formation.jpg" 
+           alt="The Clone Wars" 
+           class="middle shadow" height="450">
+			<p class="demourl" style="text-align:left;">
+				Yoda: ¡¿Victoria?! Victoria dices..., 
+        <br>Maestro Obi-Wan nada de victoria... 
+        <br>del lado oscuro el velo ha caído, la Guerra Clon empezado ya ha... 
+        <br>[Episodio II: El Ataque de los Clones]
+			</p>
+      <footer class="notes">
+        Sino porque había una misión más importante: traer de vuelta a la Web. Porqué para acceder a la Web tengo que usar 'apps sólo para Android/iOS', sino, piña.
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="no-somos-un-ejercito" class="slide h cover"><div>
+    <section>
+      <header>
+        <h2>Tuvimos que volver a empezar</h2>
+      </header>
+      <img src="pictures/lanzamiento/Pacific.png" 
+           alt="We are not an army" 
+           class="middle shadow" height="450">
+			<p class="demourl" style="text-align:left;">
+				Ya no somos un ejército, señor Becket.
+        <br>Somos la resistencia.
+        <br>[Titanes del Pacífico]
+			</p>
+      <footer class="notes">
+        Pero teníamos Linux y Gecko.
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="aliados" class="slide h cover"><div>
+    <section>
+      <header>
+        <h2>En el camino encontramos aliados</h2>
+      </header>
+      <img src="pictures/lanzamiento/partners.png" 
+           alt="Firefox OS Partners" 
+           class="middle shadow" height="450">
+      <footer class="notes">
+        Los partners: fabricantes y operadores en el Mundo Real.
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="inesperado" class="slide h cover"><div>
+    <section>
+      <header>
+        <h2>Algunos de ellos inesperados</h2>
+      </header>
+      <img src="pictures/lanzamiento/blogthinkbig.png" 
+           alt="Blog Big Think" 
+           class="middle shadow" height="450">
+      <footer class="notes">
+        Telefónica I+D
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="telefonicareps" class="slide w cover"><div>
+    <section>
+      <header>
+        <h2>¿Telefónica Reps?</h2>
+      </header>
+      <img src="pictures/lanzamiento/TelefonicaReps.jpg" 
+           alt="Telefónica Reps" 
+           class="middle shadow" height="450">
+      <footer class="notes">
+        Un peligro: ¿vamos a trabajar para un operador? NO.
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="comunidad" class="slide w cover"><div>
+    <section>
+      <header>
+        <h2>No somos una empresa<br>Somos una comunidad</h2>
+      </header>
+      <img src="pictures/lanzamiento/ThisIsMozilla.jpg" 
+           alt="This Is Mozilla" 
+           class="middle shadow" height="450">
+      <footer class="notes">
+        Una comunidad que no estaba aquí por el dinero o por los regalos.
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="mwc2013" class="slide w cover"><div>
+    <section>
+      <header>
+        <h2>Mobile Web Congress 2013: <br>Presentación de Firefox OS 1.0</h2>
+      </header>
+      <img src="pictures/lanzamiento/MWC2013-FirefoxOS.jpg" 
+           alt="Mobile Web Congress 2013" 
+           class="middle shadow" height="450">
+      <footer class="notes">
+        Presentación de Firefox OS 1.0.
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="mhworkweek" class="slide w cover"><div>
+    <section>
+      <header>
+        <h2>Mozilla Hispano Work Week<br>Lima 2013</h2>
+      </header>
+      <img src="pictures/lanzamiento/MHWorkWeek-FirefoxOS.jpg" 
+           alt="Work Week" 
+           class="middle shadow" height="450">
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="primeraola" class="slide w cover"><div>
+    <section>
+      <header>
+        <h2>Primera ola de lanzamientos</h2>
+      </header>
+      <img src="pictures/lanzamiento/WaveOne.jpg" 
+           alt="Lanzamiento España" 
+           class="middle shadow" height="450">
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="launchspain" class="slide w cover"><div>
+    <section>
+      <header>
+        <h2>España</h2>
+      </header>
+      <img src="pictures/lanzamiento/LaunchSpain1.jpg" 
+           alt="Lanzamiento España" 
+           class="middle shadow" height="450">
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="launchpoland" class="slide w cover"><div>
+    <section>
+      <header>
+        <h2>Polonia</h2>
+      </header>
+      <img src="pictures/lanzamiento/LaunchPoland.jpg" 
+           alt="Lanzamiento Polonia" 
+           class="middle shadow" height="450">
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="launchcolombia" class="slide w cover"><div>
+    <section>
+      <header>
+        <h2>Colombia</h2>
+      </header>
+      <img src="pictures/lanzamiento/LaunchColombia.jpg" 
+           alt="Lanzamiento Colombia" 
+           class="middle shadow" height="450">
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="launchvenezuela" class="slide w cover"><div>
+    <section>
+      <header>
+        <h2>Venezuela</h2>
+      </header>
+      <img src="pictures/lanzamiento/LaunchVenezuela.jpg" 
+           alt="Lanzamiento España" 
+           class="middle shadow" height="450">
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="ola1supera" class="slide w cover"><div>
+    <section>
+      <header>
+        <h2>La ola 1 superó nuestras expectativas</h2>
+      </header>
+      <img src="pictures/lanzamiento/YotamBenAmi.png" 
+           alt="FirefoxOS Q&A" 
+           class="middle shadow" height="450">
+      <footer class="notes">
+        http://news.cnet.com/8301-1035_3-57608120-94/telefonicas-yotam-ben-ami-fights-for-firefox-phones-q-a/
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="zteebay" class="slide h cover"><div>
+    <section>
+      <header>
+        <h2>Más gente creyó en Firefox OS</h2>
+      </header>
+      <img src="pictures/lanzamiento/ZTEEbay.png" 
+           alt="ZTE Open available worldwide" 
+           class="middle shadow" height="450">
+      <footer class="notes">
+        ZTE Open available worldwide, Geeksphone Peak+ sold out
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="ola2" class="slide w cover"><div>
+    <section>
+      <header>
+        <h2>La ola 2 sería posible<br>e incluiría al Perú</h2>
+      </header>
+      <img src="pictures/lanzamiento/MPDiaDelInternet.jpg" 
+           alt="Día del Internet ONGEI 2013" 
+           class="middle shadow" height="450">
+      <footer class="notes">
+        Eso hizo posible la Ola 2: Brasil, Perú, Uruguay, México, Hungría, Grecia.
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="mozillaperu" class="slide h cover"><div>
+    <section>
+      <header>
+        <h2>Somos Mozilla Perú</h2>
+      </header>
+      <img src="pictures/lanzamiento/FirefoxOSLaunchTeamPeru.jpg" 
+           alt="Firefox OS Launch Team Perú" 
+           class="middle shadow" height="450">
+      <footer class="notes">
+        Y nosotros no hacemos lo mismo siempre. Por años hicimos/hacemos difusión, pero experimentamos estrategias.
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="coneisc" class="slide w cover"><div>
+    <section>
+      <header>
+        <h2>Decidimos hacer algo diferente</h2>
+      </header>
+      <img src="pictures/lanzamiento/Coneisc.jpg" 
+           alt="CONEISC 2013" 
+           class="middle shadow" height="450">
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="entrenar" class="slide w cover"><div>
+    <section>
+      <header>
+        <h2>Talleres</h2>
+      </header>
+      <img src="pictures/lanzamiento/Infosoft.jpg" 
+           alt="Infosoft" 
+           class="middle shadow" height="450">
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="mozcafes" class="slide w cover"><div>
+    <section>
+      <header>
+        <h2>MozCafés / Dev Meetups</h2>
+      </header>
+      <img src="pictures/lanzamiento/MozCafe2.jpg" 
+           alt="Mozcafé" 
+           class="middle shadow" height="450">
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="el-mensaje" class="slide w cover"><div>
+    <section>
+      <header>
+        <h2>Un mensaje: <br>Firefox OS es viable HOY</h2>
+      </header>
+      <img src="pictures/lanzamiento/Ica.jpg" 
+           alt="Reunión Ica" 
+           class="middle shadow" height="450">
+      <footer class="notes">
+        Quizá no te compres un celular, pero sabes que SI funciona, no es "vaporware".
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="apps-apps" class="slide w cover"><div>
+    <section>
+      <header>
+        <h2>Y dimos un paso más: <br>¡apps, apps, apps!</h2>
+      </header>
+      <img src="pictures/lanzamiento/MozCafe.jpg" 
+           alt="Mozcafé" 
+           class="middle shadow" height="450">
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="cuandollego" class="slide h cover"><div>
+    <section>
+      <header>
+        <h2>Así, cuando llegó lanzamiento</h2>
+      </header>
+      <img src="pictures/lanzamiento/LaunchPeruMedia.png" 
+           alt="Apps peruanas en lanzamiento" 
+           class="middle shadow" height="450">
+      <footer class="notes">
+        No llamamos a Movistar, ellos nos llamaron
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="peruvianlaunch" class="slide h cover"><div>
+    <section>
+      <header>
+        <h2>Único lanzamiento con apps comunitarias</h2>
+      </header>
+      <img src="pictures/lanzamiento/PeruvianApps.jpg" 
+           alt="Lanzamiento Perú" 
+           class="middle shadow" height="450">
+      <footer class="notes">
+        El único lanzamiento de Firefox OS con aplicaciones locales comunitarias:
+        Octubre 29: 4 aplicaciones por Mozilla Perú + 2(+1) aplicaciones de terceros
+        2 aplicaciones comunitarias como parte de la demo oficial
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="no-solo-porque-es-posible" class="slide w cover"><div>
+    <section>
+      <header>
+        <h2>Apps peruanas para Firefox OS</h2>
+      </header>
+      <img src="pictures/lanzamiento/PaperToys.jpg" 
+           alt="Geeksphone" 
+           class="middle shadow" height="450">
+      <footer class="notes">
+        Apps que resuelvan problemas reales, en nuestro país.
+      </footer>
+    </section>
+  </div></div>
+
+	<div id="subealmetrodelima" class="slide cover w"><div>
+		<section>
+			<header>
+				<h2>Sube al Metro de Lima</h2>
+			</header>
+			<img src="pictures/lanzamiento/SubeAlMetroDeLima0.png" class="middle" alt="Sube al Metro de Lima">
+      <p class="demourl">
+        <a href="https://marketplace.firefox.com/app/subealmetrodelima">Por Willy Aguirre (y más)</a>
+      </p>
+      <footer class="notes">
+        Una aplicación para Firefox OS (y Firefox para Android) para usuarios de la Línea 1 del Tren Eléctrico de Lima, un sistema de transporte público en Perú.
+        Ofrece listado de estaciones, horarios por estación, mapa de estaciones, twits a partir de la cuenta oficial del servicio en Twitter) e información general del Tren Eléctrico. 
+      </footer>
+		</section>
+	</div></div>
+
+	<div id="metropolitano" class="slide cover w"><div>
+		<section>
+			<header>
+				<h2>Metropolitano de Lima</h2>
+			</header>
+			<img src="pictures/lanzamiento/Metropolitano0.png" class="middle" alt="Metropolitano de Lima">
+      <p class="demourl">
+        <a href="https://marketplace.firefox.com/app/metropolitano">Por Juan Eladio (y más)</a>
+      </p>
+		  <footer class="notes">
+        Información de rutas y servicios del Metropolitano, un sistema de transporte público en Lima, Perú (Peru). Si no tienes un equipo con Firefox OS ve a http://juaneladio.github.io/metropolitano/app.html
+		  </footer>
+		</section>
+	</div></div>
+
+	<div id="museamoz" class="slide cover w"><div>
+		<section>
+			<header>
+				<h2>MuseaMoz</h2>
+			</header>
+			<img src="pictures/lanzamiento/MuseaMoz0.png" class="middle" alt="MuseaMoz">
+      <p class="demourl">
+        <a href="https://marketplace.firefox.com/app/museamoz">Por Ángel Quiroz (y más)</a>
+      </p>
+  		<footer class="notes">
+        Guía de Museos del Perú. Incluye museos de Amazonas (Chachapoyas), Ancash (Huaraz), Apurimac (Abancay), Arequipa, Ayacucho, Cajamarca, Callao, Cusco, Huancavelica, Huanuco, Ica, Junin (Huanuco), La Libertad (Trujillo), Lambayeque (Chiclayo), Lima, Loreto (Iquitos), Madre de Dios (Puerto Maldonado), Moquegua, Pasco, Piura, Puno, San Martín (Moyobamba), Tacna, Tumbes, Ucayali (Pucallpa).
+		  </footer>
+		</section>
+	</div></div>
+
+	<div id="desastres" class="slide cover w"><div>
+		<section>
+			<header>
+				<h2>Guía Desastres</h2>
+			</header>
+			<img src="pictures/lanzamiento/GuiaDesastres0.png" class="middle" alt="Guía Desastres">
+      <p class="demourl">
+        <a href="https://marketplace.firefox.com/app/desastres">Por Juan Eladio (¡muahaha!)</a>
+      </p>
+		  <footer class="notes">
+        Información para prevenir y actuar ante desastres: actividad volcánica, aluvión (huayco), granizo y nevadas, helada, incendio urbano, inundación, lluvia intensa, oleaje anómalo, sequía, sismo, tormenta eléctrica, tsunami. A partir de datos de la web del INDECI Perú (Defensa Civi). También cuenta con indicaciones para preparar un pack de emergencia, compuesto por una mochila y una caja.
+        Para Perú incluye números de emergencia de gobiernos regionales.
+		  </footer>
+		</section>
+	</div></div>
+
+  <div id="no-solo" class="slide h cover"><div>
+    <section>
+      <header>
+        <h2>Firefox OS no es un celular más</h2>
+      </header>
+      <img src="pictures/lanzamiento/FiorellaAquino1.jpg" 
+           alt="Firefox OS" 
+           class="middle shadow" height="450">
+      <footer class="notes">
+        
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="otra-mision" class="slide w cover"><div>
+    <section>
+      <header>
+        <h2>Firefox OS tiene un propósito diferente</h2>
+      </header>
+      <img src="pictures/lanzamiento/GeeksphoneVS.jpg" 
+           alt="Geeksphone vs Featured" 
+           class="middle shadow" height="450">
+      <footer class="notes">
+        Ser el punto de entrada a Internet de millones de personas que no pueden acceder a un smartphone 'actual'.
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="es-solo-el-principio" class="slide h cover"><div>
+    <section>
+      <header>
+        <h2>Esto es sólo el principio</h2>
+      </header>
+      <img src="pictures/lanzamiento/lg-fireweb.jpg" 
+           alt="LG Fireweb" 
+           class="middle shadow" height="450">
+      <footer class="notes">
+        Firefox OS 1.2 estable a fin de año, Firefox OS 1.3 en desarrollo hoy
+        Hay más partners y fabricantes a los cuales convencer
+        Y empresas que crean más en Firefox OS
+        Y obviamente más desarrolladores pensando en Firefox OS y en la web
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="finale-ica" class="slide w cover"><div>
+    <section>
+      <header>
+        <h2>Ahora les toca a ustedes</h2>
+      </header>
+      <img src="pictures/lanzamiento/TallerIca.jpg" 
+           alt="Taller Ica" 
+           class="middle shadow" height="450">
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+	<div id="jm-cines-ica" class="slide cover w"><div>
+		<section>
+			<header>
+				<h2>El caso Jm Cines Ica</h2>
+			</header>
+			<img src="pictures/lanzamiento/JmCinesIca0.png" class="middle" alt="Jm Cines Ica">
+      <p class="demourl">
+        <a href="https://marketplace.firefox.com/app/jm-cines-ica">Por Carlos Lévano</a>
+      </p>
+		  <footer class="notes">
+        JM Cines Ica es un lugar donde podras ver la cartelera de los cines locales entre ellos esta Cinerama Plaza del Sol, Cinerama El Quinde, Movie Time Chincha, Uvk Ica, podrás ver los estrenos y proximos estrenos todo al alcance de tu mano, se actualiza la cartelera todos los jueves ya pronto se tendra los proximos estrenos en una lista muy atractiva...un sistema de cines para Ica, Perú (Peru)
+		  </footer>
+		</section>
+	</div></div>
+
+  <div id="firefoxos-dev" class="slide h cover"><div>
+    <section>
+      <header>
+        <h2>Un punto de inicio</h2>
+      </header>
+      <img src="pictures/lanzamiento/FirefoxOSDev.png" 
+           alt="Firefox OS Dev" 
+           class="middle shadow" height="450">
+			<p class="demourl">
+				<a href="http://mozilla.pe/firefoxos-dev">mozilla.pe/firefoxos-dev</a>
+			</p>
+    <footer class="notes">
+    </footer>
+    </section>
+  </div></div>
+
+  <div id="firefoxosperu" class="slide w cover"><div>
+    <section>
+      <header>
+        <h2>Firefox OS Perú - Team Mobilizers</h2>
+      </header>
+      <img src="pictures/lanzamiento/SamuelDeDios.jpg" 
+           alt="Firefox OS Perú" 
+           class="middle shadow" height="450">
+			<p class="demourl">
+				<a href="http://mozilla.pe/firefoxos-dev">facebook.com/groups/firefoxosperu</a>
+			</p>
+    <footer class="notes">
+    </footer>
+    </section>
+  </div></div>
+
+  <div id="gracias" class="slide w cover"><div>
+    <section>
+      <header>
+        <h2>Gracias</h2>
+      </header>
+      <img src="pictures/lanzamiento/MyWorkWeek.jpg" 
+           alt="Mozilla Hispano Work Week 2013" 
+           class="middle shadow" height="450">
+			<p class="demourl">
+				<a href="http://juaneladio.github.io/lanzamiento-firefox-os/">juaneladio.github.io/lanzamiento-firefox-os/</a>
+			</p>
+    <footer class="notes">
+    </footer>
+    </section>
+  </div></div>
+
+  <!--
+    Para esconder la barra de progreso de la presentación, borra el elemento con la clase progress.
+    -->
+  <script src="scripts/script.js"></script>
+  <!-- Copyright © 2010–2012 Vadim Makeev — pepelsbey.net -->
+</body>
+</html>
